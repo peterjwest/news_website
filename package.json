@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/peterjwest/news_website.git"
   },
-  "author": "",
+  "author": "Peter West <pete@whiteoctober.co.uk>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/peterjwest/news_website/issues"
@@ -17,5 +17,6 @@
     "body-parser": "^1.9.2",
     "express": "^4.10.2",
     "jade": "^1.7.0"
-  }
+  },
+  "private": true
 }
