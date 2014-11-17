@@ -1,0 +1,15 @@
+{
+  "name": "news_website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/peterjwest/news_website",
+  "authors": [
+    "Peter West <pete@whiteoctober.co.uk>"
+  ],
+  "description": "A simple news website",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
