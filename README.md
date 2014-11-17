@@ -1,4 +1,4 @@
-news_website
+News website
 ============
 
 Simple news website in node
