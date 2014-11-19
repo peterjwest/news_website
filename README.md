@@ -3,6 +3,8 @@ News website
 
 Simple news website in Node.js. Streams loading, parsing and rendering of a number of RSS feeds into a single page app.
 
+##[Demo](https://node-news-website.herokuapp.com)
+
 Setup with:
 
     npm install
