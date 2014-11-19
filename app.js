@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', function (req, res) {
   res.locals.title = 'The newest news';
   var articles = rssParser(feeds, process.env.FEED_LIMIT || 10);
+  res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
   templateStream('article.handlebars', res.locals, articles).pipe(res);
 });
 
