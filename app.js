@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', function (req, res) {
   res.locals.title = 'The newest news';
   var articles = rssParser(feeds, 10);
-  templateStream('article.handlebars', res.locals, articles, res);
+  templateStream('article.handlebars', res.locals, articles).pipe(res);
 });
 
 app.use(express.static('public'));
