@@ -20,5 +20,5 @@ app.get('/', function (req, res) {
 app.use(express.static('public'));
 
 if (require.main === module) {
-    app.listen(process.env.PORT || 3000);
+  app.listen(process.env.PORT || 3000);
 }
