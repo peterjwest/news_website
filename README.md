@@ -7,6 +7,11 @@ Setup with:
 
     npm install
 
+Configure RSS environment variables using a `.env` file in your project root e.g:
+
+    FEEDS="http://feeds.bbci.co.uk/news/rss.xml,http://feeds.skynews.com/feeds/rss/home.xml"
+    FEED_LIMIT=10
+
 Run with:
 
     node app.js
