@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Example RSS Feed 2</title>
+    <link>http://example.com</link>
+    <description>Feed description</description>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 19 Nov 2014 00:32:15 GMT</lastBuildDate>
+    <item>
+      <title>Title A</title>
+      <description>Description A</description>
+      <link>http://example.com/A</link>
+      <guid>http://example.com/A</guid>
+      <pubDate>Tue, 18 Nov 2014 22:07:14 GMT</pubDate>
+    </item>
+    <item>
+      <title>Title B</title>
+      <description>Description B</description>
+      <link>http://example.com/B</link>
+      <guid>http://example.com/B</guid>
+      <pubDate>Tue, 18 Nov 2014 18:12:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Title C</title>
+      <description>Description C</description>
+      <link>http://example.com/C</link>
+      <guid>http://example.com/C</guid>
+      <pubDate>Tue, 18 Nov 2014 22:20:31 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
