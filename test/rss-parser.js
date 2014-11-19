@@ -55,6 +55,7 @@ describe('RSS parser module', function () {
   it('should parse and stream items from multiple feeds', function (done) {
     nock('http://tapir.com')
       .get('/rss')
+      .delay(100)
       .replyWithFile(200, __dirname + '/fixtures/rss.xml');
 
     nock('http://badger.com')
