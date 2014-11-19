@@ -10,9 +10,9 @@ var feeds = ['http://feeds.bbci.co.uk/news/rss.xml', 'http://feeds.skynews.com/f
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function (req, res) {
-    res.locals.title = 'The newest news';
-    var articles = rssParser(feeds, 10);
-    templateStream('article.handlebars', res.locals, articles, res);
+  res.locals.title = 'The newest news';
+  var articles = rssParser(feeds, 10);
+  templateStream('article.handlebars', res.locals, articles, res);
 });
 
 app.use(express.static('public'));
