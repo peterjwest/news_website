@@ -1,0 +1,35 @@
+body {
+    background: #2B3351;
+}
+
+h1 {
+    padding: 0 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 0 30px;
+}
+
+.article {
+    padding: 10px 20px 20px;
+    border-bottom: 2px #499EF0 solid;
+}
+
+.article__title {
+    font-size: 24px;
+}
+
+.article__link {
+    color: #1C7CCF;
+}
+
+.article__description {
+    font-size: 16px;
+}
+
+.article__image {
+    float: right;
+    max-width: 120px;
+    max-height: 40px;
+}
