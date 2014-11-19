@@ -27,5 +27,10 @@
     "supertest": "^0.15.0",
     "underscore": "^1.7.0"
   },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha",
+    "postinstall": "bower install"
+  },
   "private": true
 }
