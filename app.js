@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var rssParser = require('./lib/rss-parser');
-var templateStream = require('./lib/template-stream')(__dirname + '/views', 'layout_.handlebars')
+var templateStream = require('./lib/template-stream')(__dirname + '/views', 'layout_.handlebars');
 
 var app = express();
 
