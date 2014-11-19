@@ -3,9 +3,10 @@ var bodyParser = require('body-parser');
 var rssParser = require('./lib/rss-parser');
 var templateStream = require('./lib/template-stream')(__dirname + '/views', 'layout_.handlebars');
 
-var app = express();
 
-var feeds = ['http://feeds.bbci.co.uk/news/rss.xml', 'http://feeds.skynews.com/feeds/rss/home.xml'];
+var app = module.exports = express();
+
+var feeds = process.env.FEEDS ? process.env.FEEDS.split(',') : [];
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -17,4 +18,6 @@ app.get('/', function (req, res) {
 
 app.use(express.static('public'));
 
-app.listen(process.env.PORT || 3000);
+if (require.main === module) {
+    app.listen(process.env.PORT || 3000);
+}

@@ -23,6 +23,7 @@
     "nock": "^0.50.0",
     "request": "^2.48.0",
     "stream-spec": "^0.3.5",
+    "supertest": "^0.15.0",
     "underscore": "^1.7.0"
   },
   "private": true
